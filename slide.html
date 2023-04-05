@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+           
+        </style>
+    </head>
+    <body>
+        <h2>Jaypaddy-tech company with💖</h2>
+        <p>Shares the knploge on technology for free</p>
+        <div class="slideshow-container">
+            <div class="mySlides ">
+                <div class="numbertext">1/3</div>
+                <img src="pic (1).jpg" style="width: 100%;">
+                <div class="text">caption text</div>
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2/3</div>
+                <img src="pic (2).jpg" style="width: 100%;">
+                <div class="text">caption 2</div>
+            </div> 
+
+            <div class="mySlides">
+                <div class="numbertext">3/3</div>
+                <img src="pic (3).jpg" style="width: 100%;">
+                <div class="text">caption 3</div>
+            </div>
+        </div>
+            <br>
+            <div style="text-align: center;">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+        
+        <script>
+            let slideIndex = 0;
+            showSlides();
+    
+            function showSlides(){
+                let i;
+                let slides = 
+                document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++){
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slide.length){
+                slideIndex = 1; }
+                for(i = 0; i < dots.length; i++)
+                {
+                    dots[i].className =  dots[i].className.replace("active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += "active";
+                setTimeout(showSlides, 2000);//Change image every 2second
+            }
+        </script>
+    </body>
+</html>
