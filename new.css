@@ -1,4 +1,6 @@
 body{
+    min-height: 100vh;
+    width: 100%;
     margin: 0;
     padding: 0;
 }
@@ -207,4 +209,31 @@ h3{
 .active,
 .dot:hover{
     background-color: #ff7200;
+}
+@media only screen and (max-width: 600px){
+   [section]{
+    width: auto;
+    height: auto;
+   }
+   .content h1{
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(pic.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
 }
